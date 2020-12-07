@@ -1,17 +1,17 @@
 public class Book {
-   public String authorName;
-   public String authorSurname;
-   public String authorBookEntryDate;
-   public String nameBook;
-   @AnnotationForString
-   private String allInformationAboutBook=" ";
+    private String authorName;
+    private String authorSurname;
+    private String authorBookEntryDate;
+    private String nameBook;
+    @AnnotationForString
+    private String allInformationAboutBook = " ";
 
     public Book(String authorName, String authorSurname, String authorBookEntryDate, String nameBook) {
         this.authorName = authorName;
         this.authorSurname = authorSurname;
         this.authorBookEntryDate = authorBookEntryDate;
         this.nameBook = nameBook;
-        this.allInformationAboutBook =  this.authorName +" "+ this.authorSurname+ " " +  this.authorBookEntryDate +" " + this.nameBook;
+        this.allInformationAboutBook = this.authorName + " " + this.authorSurname + " " + this.authorBookEntryDate + " " + this.nameBook;
     }
 
     public Book() {
@@ -52,7 +52,4 @@ public class Book {
     public String getAllInformationAboutBook() {
         return allInformationAboutBook;
     }
-
-
-
 }
